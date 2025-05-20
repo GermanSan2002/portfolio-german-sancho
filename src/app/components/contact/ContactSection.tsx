@@ -130,7 +130,7 @@ export default function ContactSection() {
             type="submit"
             className="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition duration-300"
           >
-            Send Me Message <FaEnvelope className="inline ml-2" />
+            Enviame un mensaje <FaEnvelope className="inline ml-2" />
           </button>
         </form>
       </div>

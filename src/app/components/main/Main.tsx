@@ -18,10 +18,10 @@ function Main() {
           <div className="min-h-screen bg-white">      
             <Header></Header>
             <Banner></Banner>
-            <Perfil></Perfil>
-            <Skills></Skills>
-            <ResumeSection/>
-            <ContactSection/>
+            <section id="about"><Perfil /></section>
+            <section id="skills"><Skills /></section>
+            <section id="education"><ResumeSection /></section>
+            <section id="contact"><ContactSection /></section>
             <Footer/>
           </div>
         </EducationProvider>

@@ -18,7 +18,7 @@ const Perfil = () => {
         <img
           src="/perfil.jpg"
           alt="Perfil"
-          className="rounded-xl w-72 h-72 object-cover"
+          className="rounded-xl w-75 h-75 object-cover"
         />
         <div className="text-center mt-4">
           <h2 className="text-2xl font-semibold text-gray-500">German Sancho Miñano</h2>
@@ -55,7 +55,7 @@ const Perfil = () => {
             className="mt-6 inline-block bg-black text-white px-3 py-1.5 rounded-md text-sm hover:bg-gray-800 transition"
             onClick={descargarCV}
         >
-        Download CV ↓
+        Descargar CV ↓
         </button>
       </div>
     </div>

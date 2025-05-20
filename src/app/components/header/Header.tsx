@@ -5,7 +5,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
@@ -34,10 +34,10 @@ const Header = () => {
           <div className={`md:flex md:items-center ${isOpen ? 'block' : 'hidden'}`}>
             <ul className="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0">
               <li><a href="#" className="text-gray-700 hover:text-blue-600">Home</a></li>
-              <li><a href="#" className="text-gray-700 hover:text-blue-600">Sobre mi</a></li>
-              <li><a href="#" className="text-gray-700 hover:text-blue-600">Experiencias</a></li>
-              <li><a href="#" className="text-gray-700 hover:text-blue-600">Estudios</a></li>
-              <li><a href="#" className="text-gray-700 hover:text-blue-600">Contacto</a></li>
+              <li><a href="#about" className="text-gray-700 hover:text-blue-600">Sobre mi</a></li>
+              <li><a href="#skills" className="text-gray-700 hover:text-blue-600">Habilidades</a></li>
+              <li><a href="#education" className="text-gray-700 hover:text-blue-600">Experiencias</a></li>
+              <li><a href="#contact" className="text-gray-700 hover:text-blue-600">Contacto</a></li>
             </ul>
           </div>
         </div>
