@@ -1,0 +1,47 @@
+[
+  {
+    "iconClass": "fas fa-laptop-code",
+    "titulo": "Desarrollo de Software",
+    "descripcion": "Experiencia en Java, Python, C, C#, JavaScript y TypeScript. Programación orientada a objetos y estructurada."
+  },
+  {
+    "iconClass": "fas fa-code-branch",
+    "titulo": "Tecnologías Web",
+    "descripcion": "Front-end con React, Angular y Next.js. Back-end con Node.js, NestJS, Spring Boot y .NET."
+  },
+  {
+    "iconClass": "fas fa-database",
+    "titulo": "Bases de Datos",
+    "descripcion": "Manejo de MySQL y conocimientos en consultas SQL y modelado de bases de datos."
+  },
+  {
+    "iconClass": "fas fa-network-wired",
+    "titulo": "Redes y Comunicaciones",
+    "descripcion": "Conocimiento en topologías de red, cableado estructurado y configuración básica de redes TCP/IP."
+  },
+  {
+    "iconClass": "fas fa-tools",
+    "titulo": "Sistemas y Hardware",
+    "descripcion": "Mantenimiento, ensamblaje y reparación de PCs. Instalación y configuración de software."
+  },
+  {
+    "iconClass": "fab fa-git-alt",
+    "titulo": "Control de Versiones",
+    "descripcion": "Experiencia con Git para control de versiones y trabajo colaborativo."
+  },
+  {
+    "iconClass": "fas fa-robot",
+    "titulo": "Herramientas de IA",
+    "descripcion": "Uso de IA para generación de código, debugging, automatización y prototipos funcionales."
+  },
+  {
+    "iconClass": "fas fa-people-arrows",
+    "titulo": "Trabajo en Equipo",
+    "descripcion": "Colaboración interdisciplinaria, comunicación efectiva y adaptación a entornos dinámicos."
+  },
+  {
+    "iconClass": "fas fa-lightbulb",
+    "titulo": "Pensamiento Crítico",
+    "descripcion": "Resolución de problemas, pensamiento lógico y capacidad de análisis."
+  }
+]
