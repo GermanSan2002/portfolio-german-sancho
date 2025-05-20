@@ -12,7 +12,7 @@ const Header = () => {
           <div className="flex-shrink-0">
             <a href="#" className="text-xl font-bold text-blue-600">
               <img
-                src={`${basePath}/logo-header.svg`}
+                src={`/logo-header.svg`}
                 alt="German logo"
                 className="h-10"
               />

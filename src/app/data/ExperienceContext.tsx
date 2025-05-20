@@ -28,7 +28,7 @@ function ExperienceProvider({children}: ExperienceProviderProps){
     const [experience, setExperience] = useState<Experience[]>([]);
 
     useEffect(() => {
-            fetch('${process.env.NEXT_PUBLIC_BASE_PATH}/experiences.json')
+            fetch('/experiences.json')
             .then(response => response.json())
             .then(datos => setExperience(datos))
             .catch(error => console.error('Error fetching data:', error));

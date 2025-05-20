@@ -8,7 +8,7 @@ const Perfil = () => {
 
   const descargarCV = () => {
     const link = document.createElement('a');
-    link.href = `${basePath}/cv.pdf`;
+    link.href = `/CV_GermanSanchoMiñano.pdf`;
     link.download = 'CV_GermanSanchoMiñano.pdf';
     link.click();
   };
@@ -18,7 +18,7 @@ const Perfil = () => {
       {/* Imagen */}
       <div className="flex-shrink-0">
         <img
-          src={`${basePath}/perfil.jpg`}
+          src={`/perfil.jpg`}
           alt="Perfil"
           className="rounded-xl w-75 h-75 object-cover"
         />

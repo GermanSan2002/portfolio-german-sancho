@@ -27,7 +27,7 @@ function EducationProvider({children}: EducationProviderProps){
     const [education, setEducation] = useState<Education[]>([]);
 
     useEffect(() => {
-            fetch('${process.env.NEXT_PUBLIC_BASE_PATH}/studies.json')
+            fetch('/studies.json')
             .then(response => response.json())
             .then(datos => setEducation(datos))
             .catch(error => console.error('Error fetching data:', error));

@@ -25,7 +25,7 @@ function SkillProvider({children}: SkillProviderProps) {
   const [skills, setSkills] = useState<Skill[]>([]);
   
   useEffect(() => {
-        fetch('${process.env.NEXT_PUBLIC_BASE_PATH}/skills.json')
+        fetch('/skills.json')
         .then(response => response.json())
         .then(datos => setSkills(datos))
         .catch(error => console.error('Error fetching data:', error));
