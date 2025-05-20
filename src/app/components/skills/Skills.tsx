@@ -5,24 +5,6 @@ import { SkillsContext } from '@/app/data/SkillsContext';
 import { useContext } from 'react';
 
 const Skills = () => {
-  const habilidades = [
-    {
-      icon: <FaPaintBrush className="text-5xl text-gray-600 mb-4" />,
-      titulo: "Diseño Gráfico",
-      descripcion: "Diseño visual atractivo y profesional para marcas y proyectos digitales.",
-    },
-    {
-      icon: <FaCode className="text-5xl text-gray-600 mb-4" />,
-      titulo: "Desarrollo Web",
-      descripcion: "Desarrollo de sitios web modernos, rápidos y responsivos con las mejores prácticas.",
-    },
-    {
-      icon: <FaMobileAlt className="text-5xl text-gray-600 mb-4" />,
-      titulo: "Apps Móviles",
-      descripcion: "Creación de aplicaciones móviles intuitivas y funcionales para iOS y Android.",
-    },
-  ];
-
   const {skills, setSkills} = useContext(SkillsContext);
 
   return (
