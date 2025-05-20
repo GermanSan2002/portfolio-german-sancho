@@ -7,6 +7,8 @@ import SkillProvider from '@/app/data/SkillsContext'
 import ResumeSection from '../resume/Resume'
 import ExperienceProvider from '@/app/data/ExperienceContext'
 import EducationProvider from '@/app/data/EducationContext'
+import ContactSection from '../contact/ContactSection'
+import Footer from '../footer/footer'
 
 function Main() {
   return (
@@ -19,6 +21,8 @@ function Main() {
             <Perfil></Perfil>
             <Skills></Skills>
             <ResumeSection/>
+            <ContactSection/>
+            <Footer/>
           </div>
         </EducationProvider>
       </ExperienceProvider>

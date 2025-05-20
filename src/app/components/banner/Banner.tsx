@@ -4,7 +4,7 @@ function Banner() {
   return (
     <section className="bg-gray-100 rounded-xl py-24 px-4 md:px-16 mt-12 mx-4 mb-12 md:mx-20 text-center">
       <h1 className="text-4xl md:text-6xl font-bold text-gray-900">
-        I'M{' '}
+        Soy{' '}
         <span className="text-gray-400 stroke-text">GERMAN</span>{' '}
         <span className="text-gray-900">SANCHO</span>
       </h1>
