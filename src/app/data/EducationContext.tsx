@@ -1,7 +1,6 @@
 "use client";
 import React, { createContext, ReactNode, useEffect, useState } from 'react'
 
-
 type Education = {
   type: string;
   institution: string,
@@ -28,7 +27,7 @@ function EducationProvider({children}: EducationProviderProps){
     const [education, setEducation] = useState<Education[]>([]);
 
     useEffect(() => {
-            fetch('./studies.json')
+            fetch('${process.env.NEXT_PUBLIC_BASE_PATH}/studies.json')
             .then(response => response.json())
             .then(datos => setEducation(datos))
             .catch(error => console.error('Error fetching data:', error));

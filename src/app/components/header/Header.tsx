@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   return (
     <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
@@ -10,7 +11,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <a href="#" className="text-xl font-bold text-blue-600">
-              <img src="/logo-header.svg" alt="German logo" className="h-10" />
+              <img
+                src={`${basePath}/logo-header.svg`}
+                alt="German logo"
+                className="h-10"
+              />
             </a>
           </div>
 

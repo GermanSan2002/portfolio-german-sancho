@@ -1,7 +1,6 @@
 "use client";
 import React, { createContext, ReactNode, useEffect, useState } from 'react'
 
-
 type Experience = {
   date: string;
   title: string,
@@ -29,7 +28,7 @@ function ExperienceProvider({children}: ExperienceProviderProps){
     const [experience, setExperience] = useState<Experience[]>([]);
 
     useEffect(() => {
-            fetch('./experiences.json')
+            fetch('${process.env.NEXT_PUBLIC_BASE_PATH}/experiences.json')
             .then(response => response.json())
             .then(datos => setExperience(datos))
             .catch(error => console.error('Error fetching data:', error));

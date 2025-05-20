@@ -4,19 +4,21 @@ import { faGithub, faLinkedin, faFacebook, faTwitter } from '@fortawesome/free-b
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Perfil = () => {
-    const descargarCV = () => {
-        const link = document.createElement('a');
-        link.href = '/cv.pdf';
-        link.download = 'CV_GermanSanchoMiñano.pdf';
-        link.click();
-    }
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
-    return (
+  const descargarCV = () => {
+    const link = document.createElement('a');
+    link.href = `${basePath}/cv.pdf`;
+    link.download = 'CV_GermanSanchoMiñano.pdf';
+    link.click();
+  };
+
+  return (
     <div className="flex flex-col lg:flex-row items-center justify-center gap-10 p-10 bg-white rounded-xl shadow-md mb-4 max-w-6xl mx-auto">
       {/* Imagen */}
       <div className="flex-shrink-0">
         <img
-          src="/perfil.jpg"
+          src={`${basePath}/perfil.jpg`}
           alt="Perfil"
           className="rounded-xl w-75 h-75 object-cover"
         />
@@ -29,16 +31,16 @@ const Perfil = () => {
           {/* Íconos sociales */}
           <div className="flex justify-center gap-4 mt-4">
             <a href="https://github.com/tuusuario">
-                <FontAwesomeIcon icon={faGithub} className="text-xl text-gray-700 hover:text-black" />
+              <FontAwesomeIcon icon={faGithub} className="text-xl text-gray-700 hover:text-black" />
             </a>
-            <a href="https://github.com/tuusuario">
-                <FontAwesomeIcon icon={faFacebook} className="text-xl text-gray-700 hover:text-black" />
+            <a href="https://facebook.com/tuusuario">
+              <FontAwesomeIcon icon={faFacebook} className="text-xl text-gray-700 hover:text-black" />
             </a>
-            <a href="https://github.com/tuusuario">
-                <FontAwesomeIcon icon={faTwitter} className="text-xl text-gray-700 hover:text-black" />
+            <a href="https://twitter.com/tuusuario">
+              <FontAwesomeIcon icon={faTwitter} className="text-xl text-gray-700 hover:text-black" />
             </a>
-            <a href="https://github.com/tuusuario">
-                <FontAwesomeIcon icon={faLinkedin} className="text-xl text-gray-700 hover:text-black" />
+            <a href="https://linkedin.com/in/tuusuario">
+              <FontAwesomeIcon icon={faLinkedin} className="text-xl text-gray-700 hover:text-black" />
             </a>
           </div>
         </div>
@@ -52,10 +54,10 @@ const Perfil = () => {
           <span className="text-black">Desarrollador Web</span> viviendo en Tucuman, Argentina.
         </h1>
         <button
-            className="mt-6 inline-block bg-black text-white px-3 py-1.5 rounded-md text-sm hover:bg-gray-800 transition"
-            onClick={descargarCV}
+          className="mt-6 inline-block bg-black text-white px-3 py-1.5 rounded-md text-sm hover:bg-gray-800 transition"
+          onClick={descargarCV}
         >
-        Descargar CV ↓
+          Descargar CV ↓
         </button>
       </div>
     </div>
