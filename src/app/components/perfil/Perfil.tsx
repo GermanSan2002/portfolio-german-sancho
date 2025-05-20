@@ -30,7 +30,7 @@ const Perfil = () => {
           </div>
           {/* Íconos sociales */}
           <div className="flex justify-center gap-4 mt-4">
-            <a href="https://github.com/tuusuario">
+            <a href="https://github.com/GermanSan2002">
               <FontAwesomeIcon icon={faGithub} className="text-xl text-gray-700 hover:text-black" />
             </a>
             <a href="https://facebook.com/tuusuario">
@@ -39,7 +39,7 @@ const Perfil = () => {
             <a href="https://twitter.com/tuusuario">
               <FontAwesomeIcon icon={faTwitter} className="text-xl text-gray-700 hover:text-black" />
             </a>
-            <a href="https://linkedin.com/in/tuusuario">
+            <a href="https://www.linkedin.com/in/germán-sancho-miñano-82a156254/">
               <FontAwesomeIcon icon={faLinkedin} className="text-xl text-gray-700 hover:text-black" />
             </a>
           </div>
