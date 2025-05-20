@@ -1,0 +1,26 @@
+[
+    {
+      "date": "feb. 2025 - actualidad",
+      "title": "Desarrollador",
+      "subtitle": "Autónomo",
+      "location": "Argentina",
+      "description": "",
+      "duration": "4 meses"
+    },
+    {
+      "date": "may. 2024 - mar. 2025",
+      "title": "Desarrollador full stack",
+      "subtitle": "DeLocals · Autónomo",
+      "location": "Argentina · En remoto",
+      "description": "Desarrollador fullstack para el desarrollo de app móvil y backoffice para la empresa DeLocals.\nHerramientas: React Native, Nest.js, Next.js",
+      "duration": "11 meses"
+    },
+    {
+      "date": "nov. 2023 - abr. 2024",
+      "title": "Operador de mesa de ayuda",
+      "subtitle": "ipsst · Jornada parcial",
+      "location": "San Miguel de Tucumán, Tucumán, Argentina",
+      "description": "",
+      "duration": "6 meses"
+    }
+]

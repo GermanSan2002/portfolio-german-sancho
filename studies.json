@@ -1,0 +1,23 @@
+[
+    {
+      "type": "degree",
+      "institution": "Universidad Nacional de Tucumán",
+      "degree": "Ingeniería en Computación",
+      "date": "2020 - Actualidad",
+      "field": "Sistemas, programación, bases de datos, redes y arquitectura de computadoras"
+    },
+    {
+      "type": "degree",
+      "institution": "Escuela Secundaria",
+      "degree": "Bachiller con orientación humanística y en ciencias sociales",
+      "date": "2015 - 2019",
+      "field": "Ciencias sociales y humanidades"
+    },
+    {
+      "type": "Certification",
+      "institution": "Argentina Programa 4.0",
+      "degree": "Programador Full Stack Web",
+      "date": "2022 - 2023",
+      "field": "Angular, Spring Boot, Java"
+    }
+]
