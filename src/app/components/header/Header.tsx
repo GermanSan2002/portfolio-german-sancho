@@ -4,33 +4,29 @@ import { useContext, useState } from 'react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const {language, setLanguage} = useContext(LanguageContext);
+  const { language, setLanguage } = useContext(LanguageContext);
 
   const changeLanguage = () => {
-    setLanguage(language === "spanish" ? "english" : "spanish");
+    setLanguage(language === 'spanish' ? 'english' : 'spanish');
   };
 
   const labels = {
-    home: language === "spanish" ? "Inicio" : "Home",
-    about: language === "spanish" ? "Sobre mí" : "About",
-    skills: language === "spanish" ? "Habilidades" : "Skills",
-    education: language === "spanish" ? "Experiencias" : "Education",
-    contact: language === "spanish" ? "Contacto" : "Contact",
-    toggleLang: language === "spanish" ? "EN" : "ES",
+    home: language === 'spanish' ? 'Inicio' : 'Home',
+    about: language === 'spanish' ? 'Sobre mí' : 'About',
+    skills: language === 'spanish' ? 'Habilidades' : 'Skills',
+    education: language === 'spanish' ? 'Experiencias' : 'Education',
+    contact: language === 'spanish' ? 'Contacto' : 'Contact',
+    toggleLang: language === 'spanish' ? 'EN' : 'ES',
   };
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <nav className="bg-white bg-gray-600 shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" className="text-xl font-bold text-blue-600">
-              <img
-                src={`/logo-header.svg`}
-                alt="German logo"
-                className="h-10"
-              />
+              <img src="/logo-header.svg" alt="German logo" className="h-10" />
             </a>
           </div>
 
@@ -54,28 +50,63 @@ const Header = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
+                aria-label="Abrir o cerrar menú de navegación"
+                aria-pressed={isOpen}
                 className="text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
-                aria-label="Toggle menu"
               >
                 <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   {isOpen ? (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
                   ) : (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
                   )}
                 </svg>
               </button>
             </div>
           </div>
 
-          {/* Menú */}
-          <div className={`md:flex md:items-center ${isOpen ? 'block' : 'hidden'}`}>
-            <ul className="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0">
-              <li><a href="#" className="text-gray-700 hover:text-blue-600">{labels.home}</a></li>
-              <li><a href="#about" className="text-gray-700 hover:text-blue-600">{labels.about}</a></li>
-              <li><a href="#skills" className="text-gray-700 hover:text-blue-600">{labels.skills}</a></li>
-              <li><a href="#education" className="text-gray-700 hover:text-blue-600">{labels.education}</a></li>
-              <li><a href="#contact" className="text-gray-700 hover:text-blue-600">{labels.contact}</a></li>
+          {/* Menú principal */}
+          <div
+            className={`absolute top-16 left-0 w-full bg-white dark:bg-gray-500 px-4 py-3 rounded-md md:static md:flex md:items-center md:w-auto ${
+              isOpen ? 'block' : 'hidden'
+            }`}
+          >
+            <ul className="flex flex-col text-center items-center md:flex-row md:space-x-6 mt-2 md:mt-0 md:p-0">
+              <li>
+                <a href="#" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-gray-200 hover:text-blue-600">
+                  {labels.home}
+                </a>
+              </li>
+              <li>
+                <a href="#about" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-gray-200 hover:text-blue-600">
+                  {labels.about}
+                </a>
+              </li>
+              <li>
+                <a href="#skills" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-gray-200 hover:text-blue-600">
+                  {labels.skills}
+                </a>
+              </li>
+              <li>
+                <a href="#education" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-gray-200 hover:text-blue-600">
+                  {labels.education}
+                </a>
+              </li>
+              <li>
+                <a href="#contact" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-gray-200 hover:text-blue-600">
+                  {labels.contact}
+                </a>
+              </li>
             </ul>
           </div>
         </div>
