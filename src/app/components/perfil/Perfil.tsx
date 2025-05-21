@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext } from "react";
-import { faGithub, faLinkedin, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { LanguageContext } from "@/app/data/LanguageContext";
 
@@ -45,11 +45,14 @@ const Perfil = () => {
             <a href="https://github.com/GermanSan2002">
               <FontAwesomeIcon icon={faGithub} className="text-xl text-gray-700 hover:text-black" />
             </a>
-            <a href="https://facebook.com/tuusuario">
+            <a href="https://www.facebook.com/Germansanchom">
               <FontAwesomeIcon icon={faFacebook} className="text-xl text-gray-700 hover:text-black" />
             </a>
-            <a href="https://twitter.com/tuusuario">
-              <FontAwesomeIcon icon={faTwitter} className="text-xl text-gray-700 hover:text-black" />
+            <a href="https://www.instagram.com/gersan2002/">
+              <FontAwesomeIcon icon={faInstagram} className="text-xl text-gray-700 hover:text-black" />
+            </a>
+            <a href="https://x.com/MinanoGerman">
+              <FontAwesomeIcon icon={faXTwitter} className="text-xl text-gray-700 hover:text-black" />
             </a>
             <a href="https://www.linkedin.com/in/germán-sancho-miñano-82a156254/">
               <FontAwesomeIcon icon={faLinkedin} className="text-xl text-gray-700 hover:text-black" />
