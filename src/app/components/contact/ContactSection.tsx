@@ -24,7 +24,7 @@ export default function ContactSection() {
     domicilio1: language === "spanish" ? "Domicilio:" : "Domicile:",
     domicilio2: language === "spanish" ? "Avenida Belgrano 2215, San Miguel de Tucuman, Tucuman, Argentina" : "Belgrano Avenue 2215, San Miguel de Tucuman, Tucuman, Argentina",
     telefono1: language === "spanish" ? "Numero de contacto:" : "Contact number:",
-    telefono2: "+54 3876834025",
+    telefono2: "+54 9 3876834025",
     emailLabel1: language === "spanish" ? "Envíame un mail:" : "Send me an e-mail:",
     emailLabel2: "germansan2002@outlook.com",
     nombreForm: language === "spanish" ? "Nombre Completo" : "Full Name",
