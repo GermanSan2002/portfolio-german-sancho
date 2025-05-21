@@ -9,24 +9,21 @@ import ExperienceProvider from '@/app/data/ExperienceContext'
 import EducationProvider from '@/app/data/EducationContext'
 import ContactSection from '../contact/ContactSection'
 import Footer from '../footer/footer'
+import DataContext from '@/app/data/DataContext'
 
 function Main() {
   return (
-    <SkillProvider>
-      <ExperienceProvider>
-        <EducationProvider>
-          <div className="min-h-screen bg-white">      
-            <Header></Header>
-            <Banner></Banner>
-            <section id="about"><Perfil /></section>
-            <section id="skills"><Skills /></section>
-            <section id="education"><ResumeSection /></section>
-            <section id="contact"><ContactSection /></section>
-            <Footer/>
-          </div>
-        </EducationProvider>
-      </ExperienceProvider>
-    </SkillProvider>
+    <DataContext>
+      <div className="min-h-screen bg-white">      
+          <Header></Header>
+          <Banner></Banner>
+          <section id="about"><Perfil /></section>
+          <section id="skills"><Skills /></section>
+          <section id="education"><ResumeSection /></section>
+          <section id="contact"><ContactSection /></section>
+          <Footer/>
+        </div>
+    </DataContext>
   )
 }
 

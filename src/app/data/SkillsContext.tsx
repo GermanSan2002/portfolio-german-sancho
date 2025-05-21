@@ -4,7 +4,9 @@ import React, { createContext, ReactNode, useEffect, useState } from 'react'
 type Skill = {
   icono: string;
   titulo: string;
+  title: string;
   descripcion: string;
+  description: string;
 };
 
 type SkillsContextType = {

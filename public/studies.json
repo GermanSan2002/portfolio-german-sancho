@@ -1,23 +1,35 @@
 [
-    {
-      "type": "degree",
-      "institution": "Universidad Nacional de Tucumán",
-      "degree": "Ingeniería en Computación",
-      "date": "2020 - Actualidad",
-      "field": "Sistemas, programación, bases de datos, redes y arquitectura de computadoras"
-    },
-    {
-      "type": "degree",
-      "institution": "Escuela Secundaria",
-      "degree": "Bachiller con orientación humanística y en ciencias sociales",
-      "date": "2015 - 2019",
-      "field": "Ciencias sociales y humanidades"
-    },
-    {
-      "type": "Certification",
-      "institution": "Argentina Programa 4.0",
-      "degree": "Programador Full Stack Web",
-      "date": "2022 - 2023",
-      "field": "Angular, Spring Boot, Java"
-    }
+  {
+    "type": "degree",
+    "institution": "Universidad Nacional de Tucumán",
+    "institutionEn": "National University of Tucumán",
+    "degree": "Ingeniería en Computación",
+    "degreeEn": "Computer Engineering",
+    "date": "2020 - Actualidad",
+    "dateEn": "2020 - Present",
+    "field": "Sistemas, programación, bases de datos, redes y arquitectura de computadoras",
+    "fieldEn": "Systems, programming, databases, networks, and computer architecture"
+  },
+  {
+    "type": "degree",
+    "institution": "Escuela Secundaria",
+    "institutionEn": "High School",
+    "degree": "Bachiller con orientación humanística y en ciencias sociales",
+    "degreeEn": "High School Diploma with a focus on Humanities and Social Sciences",
+    "date": "2015 - 2019",
+    "dateEn": "2015 - 2019",
+    "field": "Ciencias sociales y humanidades",
+    "fieldEn": "Social sciences and humanities"
+  },
+  {
+    "type": "Certification",
+    "institution": "Argentina Programa 4.0",
+    "institutionEn": "Argentina Programa 4.0",
+    "degree": "Programador Full Stack Web",
+    "degreeEn": "Full Stack Web Developer",
+    "date": "2022 - 2023",
+    "dateEn": "2022 - 2023",
+    "field": "Angular, Spring Boot, Java",
+    "fieldEn": "Angular, Spring Boot, Java"
+  }
 ]

@@ -1,17 +1,26 @@
 "use client";
-import { FaCode, FaPaintBrush, FaMobileAlt } from 'react-icons/fa';
 import SkillItem from './skill_item/SkillItem';
 import { SkillsContext } from '@/app/data/SkillsContext';
-import { useContext } from 'react';
+import React, { useContext } from "react";
+import { LanguageContext } from '@/app/data/LanguageContext';
 
 const Skills = () => {
   const {skills, setSkills} = useContext(SkillsContext);
+  const {language, setLanguage} = useContext(LanguageContext);
+
+  const labels = {
+    skils: language === "spanish" ? "HABILIDADES" : "SKILLS",
+    mySkills: language === "spanish" ? "Estas son mis habilidades" : "These are my skills",
+    presentacion2: language === "spanish" ? "viviendo en Tucuman, Argentina." : "living in Tucuman, Argentina.",
+    profesion: language === "spanish" ? "Desarrollador Web" : "Web Developer",
+    descargar: language === "spanish" ? "Descargar CV" : "Download CV",
+  };
 
   return (
     <section className="py-16 bg-white">
       <div className="text-center mb-12">
-        <h3 className="text-sm tracking-wide text-gray-500 uppercase">HABILIDADES</h3>
-        <h2 className="text-4xl font-semibold text-gray-900">Mis Habilidades</h2>
+        <h3 className="text-2xl tracking-wide text-gray-500 uppercase">{labels.skils}</h3>
+        <h2 className="text-4xl font-semibold text-gray-900">{labels.mySkills}</h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
         {skills.map((hab, index) => (

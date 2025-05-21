@@ -4,9 +4,13 @@ import React, { createContext, ReactNode, useEffect, useState } from 'react'
 type Education = {
   type: string;
   institution: string,
+  institutionEn: string,
   degree: string,
+  degreeEn: string,
   date: string,
+  dateEn: string,
   field: string,
+  fieldEn: string,
 };
 
 type EducationContextType = {

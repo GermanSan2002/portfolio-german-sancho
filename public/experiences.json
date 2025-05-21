@@ -1,26 +1,44 @@
 [
-    {
-      "date": "feb. 2025 - actualidad",
-      "title": "Desarrollador",
-      "subtitle": "Autónomo",
-      "location": "Argentina",
-      "description": "",
-      "duration": "4 meses"
-    },
-    {
-      "date": "may. 2024 - mar. 2025",
-      "title": "Desarrollador full stack",
-      "subtitle": "DeLocals · Autónomo",
-      "location": "Argentina · En remoto",
-      "description": "Desarrollador fullstack para el desarrollo de app móvil y backoffice para la empresa DeLocals.\nHerramientas: React Native, Nest.js, Next.js",
-      "duration": "11 meses"
-    },
-    {
-      "date": "nov. 2023 - abr. 2024",
-      "title": "Operador de mesa de ayuda",
-      "subtitle": "ipsst · Jornada parcial",
-      "location": "San Miguel de Tucumán, Tucumán, Argentina",
-      "description": "",
-      "duration": "6 meses"
-    }
+  {
+    "date": "nov. 2023 - abr. 2024",
+    "dateEn": "Nov 2023 – Apr 2024",
+    "title": "Operador de mesa de ayuda",
+    "titleEn": "Help Desk Operator",
+    "subtitle": "ipsst · Jornada parcial",
+    "subtitleEn": "ipsst · Part-time",
+    "location": "San Miguel de Tucumán, Tucumán, Argentina",
+    "locationEn": "San Miguel de Tucumán, Tucumán, Argentina",
+    "description": "",
+    "descriptionEn": "",
+    "duration": "6 meses",
+    "durationEn": "6 months"
+  },
+  {
+    "date": "may. 2024 - mar. 2025",
+    "dateEn": "May 2024 – Mar 2025",
+    "title": "Desarrollador full stack",
+    "titleEn": "Full Stack Developer",
+    "subtitle": "DeLocals · Autónomo",
+    "subtitleEn": "DeLocals · Freelance",
+    "location": "Argentina · En remoto",
+    "locationEn": "Argentina · Remote",
+    "description": "Desarrollador fullstack para el desarrollo de app móvil y backoffice para la empresa DeLocals.\nHerramientas: React Native, Nest.js, Next.js",
+    "descriptionEn": "Fullstack developer for the development of a mobile app and back office for DeLocals.\nTools: React Native, Nest.js, Next.js",
+    "duration": "11 meses",
+    "durationEn": "11 months"
+  },
+  {
+    "date": "feb. 2025 - actualidad",
+    "dateEn": "Feb 2025 - Present",
+    "title": "Desarrollador",
+    "titleEn": "Developer",
+    "subtitle": "Autónomo",
+    "subtitleEn": "Freelance",
+    "location": "Argentina",
+    "locationEn": "Argentina",
+    "description": "",
+    "descriptionEn": "",
+    "duration": "4 meses",
+    "durationEn": "4 months"
+  }
 ]

@@ -3,11 +3,17 @@ import React, { createContext, ReactNode, useEffect, useState } from 'react'
 
 type Experience = {
   date: string;
+  dateEn: string;
   title: string,
+  titleEn: string,
   subtitle: string,
+  subtitleEn: string,
   location: string,
+  locationEn: string,
   description: string,
+  descriptionEn: string,
   duration: string
+  durationEn: string
 };
 
 type ExperienceContextType = {

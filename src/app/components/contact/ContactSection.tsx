@@ -1,7 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
+import { LanguageContext } from "@/app/data/LanguageContext";
 
 type ContactForm = {
   fullname: string;
@@ -10,11 +11,27 @@ type ContactForm = {
 };
 
 export default function ContactSection() {
+  const {language, setLanguage} = useContext(LanguageContext);
   const [formData, setFormData] = useState<ContactForm>({
     fullname: "",
     email: "",
     message: "",
   });
+
+  const labels = {
+    contact1: language === "spanish" ? "Contactame" : "Contact me",
+    contact2: language === "spanish" ? "¡Entremos en contacto!" : "Let's get in touch!",
+    domicilio1: language === "spanish" ? "Domicilio:" : "Domicile:",
+    domicilio2: language === "spanish" ? "Avenida Belgrano 2215, San Miguel de Tucuman, Tucuman, Argentina" : "Belgrano Avenue 2215, San Miguel de Tucuman, Tucuman, Argentina",
+    telefono1: language === "spanish" ? "Numero de contacto:" : "Contact number:",
+    telefono2: "+54 3876834025",
+    emailLabel1: language === "spanish" ? "Envíame un mail:" : "Send me an e-mail:",
+    emailLabel2: "germansan2002@outlook.com",
+    nombreForm: language === "spanish" ? "Nombre Completo" : "Full Name",
+    emailForm: language === "spanish" ? "Correo electronico" : "E-mail adress",
+    messageForm: language === "spanish" ? "Tu mensaje" : "Your message",
+    formButton: language === "spanish" ? "Enviame un mensaje": "Send me a message"
+  };
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = event.target;
@@ -51,8 +68,8 @@ export default function ContactSection() {
   return (
     <section className="bg-white py-16 px-4 md:px-20">
       <div className="text-center mb-12">
-        <p className="text-gray-700 tracking-wide uppercase">Contactame</p>
-        <h2 className="text-4xl font-bold text-gray-400">¡Entremos en contacto!</h2>
+        <p className="text-gray-700 tracking-wide uppercase">{labels.contact1}</p>
+        <h2 className="text-4xl font-bold text-gray-400">{labels.contact2}</h2>
       </div>
 
       <div className="flex flex-col md:flex-row gap-10">
@@ -61,22 +78,22 @@ export default function ContactSection() {
           <div className="flex items-start gap-4">
             <FaMapMarkerAlt className="text-2xl text-gray-700 mt-1" />
             <div>
-              <h3 className="text-gray-800 font-semibold">Domicilio:</h3>
-              <p className="text-gray-500">Avenida Belgrano 2215, San Miguel de Tucuman, Tucuman, Argentina</p>
+              <h3 className="text-gray-800 font-semibold">{labels.domicilio1}</h3>
+              <p className="text-gray-500">{labels.domicilio2}</p>
             </div>
           </div>
           <div className="flex items-start gap-4">
             <FaPhoneAlt className="text-2xl text-gray-700 mt-1" />
             <div>
-              <h3 className="text-gray-800 font-semibold">Numero de contacto:</h3>
-              <p className="text-gray-500">+54 3876834025</p>
+              <h3 className="text-gray-800 font-semibold">{labels.telefono1}</h3>
+              <p className="text-gray-500">{labels.telefono2}</p>
             </div>
           </div>
           <div className="flex items-start gap-4">
             <FaEnvelope className="text-2xl text-gray-700 mt-1" />
             <div>
-              <h3 className="text-gray-800 font-semibold">Envíame un mail:</h3>
-              <p className="text-gray-500">germansan2002@outlook.com</p>
+              <h3 className="text-gray-800 font-semibold">{labels.emailLabel1}</h3>
+              <p className="text-gray-500">{labels.emailLabel2}</p>
             </div>
           </div>
         </div>
@@ -86,7 +103,7 @@ export default function ContactSection() {
           <div className="flex flex-col md:flex-row gap-6">
             <div className="w-full">
               <label className="block text-gray-700 font-semibold mb-2">
-                Nombre Completo
+                {labels.nombreForm}
               </label>
               <input
                 type="text"
@@ -99,7 +116,7 @@ export default function ContactSection() {
             </div>
             <div className="w-full">
               <label className="block text-gray-700 font-semibold mb-2">
-                Email Address
+                {labels.emailForm}
               </label>
               <input
                 type="email"
@@ -114,7 +131,7 @@ export default function ContactSection() {
 
           <div>
             <label className="block text-gray-700 font-semibold mb-2">
-              Tu mensaje
+              {labels.messageForm}
             </label>
             <textarea
               name="message"
@@ -130,7 +147,7 @@ export default function ContactSection() {
             type="submit"
             className="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition duration-300"
           >
-            Enviame un mensaje <FaEnvelope className="inline ml-2" />
+            {labels.formButton} <FaEnvelope className="inline ml-2" />
           </button>
         </form>
       </div>
