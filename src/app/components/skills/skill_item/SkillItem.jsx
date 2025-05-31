@@ -7,7 +7,7 @@ function SkillItem({skill}) {
   const isSpanish = language === "spanish";
 
   return (
-    <div className="bg-sky-100 rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
+    <div className="bg-sky-100 w-full max-w-sm rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
       <div className="flex justify-center">
         <i className={`${skill.iconClass} text-5xl text-gray-600 mb-4`}></i>
       </div>

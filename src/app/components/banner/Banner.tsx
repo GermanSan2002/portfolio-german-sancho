@@ -15,7 +15,7 @@ function Banner() {
       <h1 className="text-4xl md:text-6xl font-bold text-gray-900">
         {labels.label1}{' '}
         <span className="text-blue-300 stroke-text">GERMAN</span>{' '}
-        <span className="text-gray-900">SANCHO</span>
+        <span className="text-gray-900">SANCHO MIÑANO</span>
       </h1>
 
       <div className="mt-8 inline-flex flex-wrap gap-4 bg-white px-6 py-3 rounded-md shadow-md justify-center">

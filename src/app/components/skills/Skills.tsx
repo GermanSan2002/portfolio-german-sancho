@@ -22,7 +22,7 @@ const Skills = () => {
         <h3 className="text-2xl tracking-wide text-gray-500 uppercase">{labels.skils}</h3>
         <h2 className="text-4xl font-semibold text-gray-900">{labels.mySkills}</h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+      <div className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto px-4">
         {skills.map((hab, index) => (
           <SkillItem key={index} skill={hab}></SkillItem>
         ))}

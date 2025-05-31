@@ -14,13 +14,14 @@ const Header = () => {
     home: language === 'spanish' ? 'Inicio' : 'Home',
     about: language === 'spanish' ? 'Sobre mí' : 'About',
     skills: language === 'spanish' ? 'Habilidades' : 'Skills',
-    education: language === 'spanish' ? 'Experiencias' : 'Education',
+    education: language === 'spanish' ? 'Experiencias' : 'Experience',
+    project: language === 'spanish' ? 'Proyectos' : 'Projects',
     contact: language === 'spanish' ? 'Contacto' : 'Contact',
     toggleLang: language === 'spanish' ? 'EN' : 'ES',
   };
 
   return (
-    <nav className="bg-white bg-gray-600 shadow-md fixed top-0 left-0 w-full z-50">
+    <nav className=" bg-gray-50 shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -41,7 +42,7 @@ const Header = () => {
                 checked={language === 'english'}
               />
               <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
-              <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">
+              <span className="ms-3 text-sm font-medium text-gray-900">
                 {labels.toggleLang}
               </span>
             </label>
@@ -100,6 +101,11 @@ const Header = () => {
               <li>
                 <a href="#education" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-gray-200 hover:text-blue-600">
                   {labels.education}
+                </a>
+              </li>
+              <li>
+                <a href="#project" onClick={() => setIsOpen(false)} className="text-gray-700 dark:text-gray-200 hover:text-blue-600">
+                  {labels.project}
                 </a>
               </li>
               <li>

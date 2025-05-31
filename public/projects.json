@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Micro-users-microservice",
+        "title_esp": "Micro-users-microservice",
+        "description_esp": "Microservicio de autentificacion de usuarios desarrollado con Nest.js y Node. Implementa github actions para despliegue en la nube.",
+        "description": "User authentication microservice developed with Next.js. Implements GitHub Actions for cloud deployment.",
+        "imageUrl": "https://conocimiento.blob.core.windows.net/conocimiento/2022/Contables/ContabilidadBancos/CasosPracticos/CP_Usuarios_y_perfiles/drex_usuarios_y_perfiles_custom.png",
+        "sourceLink": "https://github.com/GermanSan2002/microservicio-usuarios.git",
+        "demoLink": "https://micro-users-wj9l.onrender.com/swagger",
+        "tags": ["Nest.js", "TypeScript", "Docker", "Github-Actions"]
+    },
+    {
+        "title": "Personal portfolio",
+        "title_esp": "Portafolio personal",
+        "description_esp": "Portafolio personal desarrollado en React con Next.js y React. Implementa github actions para despliegue en la nube.",
+        "description": "User authentication microservice developed with Next.js. Implements GitHub Actions for cloud deployment.",
+        "imageUrl": "https://www.esdesignbarcelona.com/sites/default/files/img/6_pasos_para_crear_un_portfolio_digital_y_todo_lo_que_debe_incluir_2.png",
+        "sourceLink": "#",
+        "demoLink": "#",
+        "tags": ["Next.js", "TypeScript", "JavaScript", "Docker", "Github-Actions"]
+    },
+    {
+        "title": "Proyecto final Argentina Programa 4.0",
+        "title_esp": "Proyecto final Argentina Programa 4.0",
+        "description_esp": "Proyecto final del programa Argentina Programa 4.0, que consiste en un portafolio editable basico usando angular en frontend y Java con Spring Boot en Backend",
+        "description": "Final project of the Argentina Program 4.0 program, which consists of a basic editable portfolio using Angular in the frontend and Java with Spring Boot in the backend",
+        "imageUrl": "https://www.esdesignbarcelona.com/sites/default/files/img/6_pasos_para_crear_un_portfolio_digital_y_todo_lo_que_debe_incluir_2.png",
+        "sourceLink": "https://github.com/stars/GermanSan2002/lists/trabajo-final-ap",
+        "demoLink": "#",
+        "tags": ["Java", "Angular", "TypeScript", "Spring Boot"]
+    }
+]
