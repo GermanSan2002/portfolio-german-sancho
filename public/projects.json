@@ -24,7 +24,7 @@
         "title_esp": "Proyecto final Argentina Programa 4.0",
         "description_esp": "Proyecto final del programa Argentina Programa 4.0. Desarrollé una aplicación web editable que permite mostrar y gestionar un portfolio desde una interfaz amigable. El frontend está construido con Angular y TypeScript, mientras que el backend utiliza Java con Spring Boot. Se aplicaron principios de arquitectura limpia y separación de responsabilidades entre cliente y servidor.",
         "description": "Final project for the Argentina Program 4.0 program. I developed an editable web application that allows you to display and manage a portfolio from a user-friendly interface. The frontend is built with Angular and TypeScript, while the backend uses Java with Spring Boot. Clean architecture principles and separation of responsibilities between client and server were applied.",
-        "imageUrl": "https://fmn.unsl.edu.ar/wp-content/uploads/2023/05/banner-ok-argentina-programa.jpg",
+        "imageUrl": "https://i.ytimg.com/vi/S6H3mAWFLEM/hqdefault.jpg",
         "sourceLink": "https://github.com/stars/GermanSan2002/lists/trabajo-final-ap",
         "demoLink": "#",
         "tags": ["Java", "Angular", "TypeScript", "Spring Boot"]

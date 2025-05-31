@@ -13,7 +13,7 @@ function ProjectItem({ item }) {
     };
 
     return (
-        <div className="w-full max-w-sm bg-sky-200 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700">
+        <div className="w-full max-w-md bg-sky-200 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700">
             <a href={item.demoLink}>
                 <img className="rounded-t-lg w-full h-[250px] object-cover" src={item.imageUrl} alt={`Vista previa del proyecto: ${isSpanish ? item.title_esp : item.title}`} />
             </a>
