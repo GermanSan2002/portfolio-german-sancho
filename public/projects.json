@@ -2,8 +2,8 @@
     {
         "title": "Micro-users-microservice",
         "title_esp": "Micro-users-microservice",
-        "description_esp": "Microservicio de autentificacion de usuarios desarrollado con Nest.js y Node. Implementa github actions para despliegue en la nube.",
-        "description": "User authentication microservice developed with Next.js. Implements GitHub Actions for cloud deployment.",
+        "description_esp": "Microservicio de autenticación de usuarios desarrollado con Nest.js y TypeScript. Permite registrar, iniciar sesión y validar usuarios de forma segura. El proyecto está contenedorizado con Docker y utiliza GitHub Actions para automatizar pruebas y despliegue continuo en la nube. Ideal para integrarse como parte de una arquitectura basada en microservicios.",
+        "description": "User authentication microservice developed with Nest.js and TypeScript. It allows for secure user registration, login, and validation. The project is containerized with Docker and uses GitHub Actions to automate testing and continuous deployment to the cloud. Ideal for integration as part of a microservices-based architecture.",
         "imageUrl": "https://conocimiento.blob.core.windows.net/conocimiento/2022/Contables/ContabilidadBancos/CasosPracticos/CP_Usuarios_y_perfiles/drex_usuarios_y_perfiles_custom.png",
         "sourceLink": "https://github.com/GermanSan2002/microservicio-usuarios.git",
         "demoLink": "https://micro-users-wj9l.onrender.com/swagger",
@@ -12,18 +12,18 @@
     {
         "title": "Personal portfolio",
         "title_esp": "Portafolio personal",
-        "description_esp": "Portafolio personal desarrollado en React con Next.js y React. Implementa github actions para despliegue en la nube.",
-        "description": "User authentication microservice developed with Next.js. Implements GitHub Actions for cloud deployment.",
+        "description_esp": "Sitio web desarrollado con Next.js y React para presentar mi perfil profesional, habilidades y proyectos. Utiliza TypeScript para una mejor organización del código y despliegue automatizado en Vercel mediante GitHub Actions. El sitio está optimizado para dispositivos móviles y SEO, y refleja buenas prácticas de desarrollo frontend moderno.",
+        "description": "Website developed with Next.js and React to showcase my professional profile, skills, and projects. It uses TypeScript for better code organization and automated deployment to Vercel using GitHub Actions. The site is optimized for mobile devices and SEO, and reflects modern front-end development best practices.",
         "imageUrl": "https://www.esdesignbarcelona.com/sites/default/files/img/6_pasos_para_crear_un_portfolio_digital_y_todo_lo_que_debe_incluir_2.png",
         "sourceLink": "#",
         "demoLink": "#",
-        "tags": ["Next.js", "TypeScript", "JavaScript", "Docker", "Github-Actions"]
+        "tags": ["Next.js", "TypeScript", "JavaScript", "Vercel", "Github-Actions"]
     },
     {
         "title": "Proyecto final Argentina Programa 4.0",
         "title_esp": "Proyecto final Argentina Programa 4.0",
-        "description_esp": "Proyecto final del programa Argentina Programa 4.0, que consiste en un portafolio editable basico usando angular en frontend y Java con Spring Boot en Backend",
-        "description": "Final project of the Argentina Program 4.0 program, which consists of a basic editable portfolio using Angular in the frontend and Java with Spring Boot in the backend",
+        "description_esp": "Proyecto final del programa Argentina Programa 4.0. Desarrollé una aplicación web editable que permite mostrar y gestionar un portfolio desde una interfaz amigable. El frontend está construido con Angular y TypeScript, mientras que el backend utiliza Java con Spring Boot. Se aplicaron principios de arquitectura limpia y separación de responsabilidades entre cliente y servidor.",
+        "description": "Final project for the Argentina Program 4.0 program. I developed an editable web application that allows you to display and manage a portfolio from a user-friendly interface. The frontend is built with Angular and TypeScript, while the backend uses Java with Spring Boot. Clean architecture principles and separation of responsibilities between client and server were applied.",
         "imageUrl": "https://fmn.unsl.edu.ar/wp-content/uploads/2023/05/banner-ok-argentina-programa.jpg",
         "sourceLink": "https://github.com/stars/GermanSan2002/lists/trabajo-final-ap",
         "demoLink": "#",
